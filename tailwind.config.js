@@ -19,6 +19,10 @@ module.exports = {
         "marin-semiblue": "#8fa4fe",
         "marin-skyblue": "#deeafe",
       },
+      padding: {
+        "10vh": "10vh",
+        "5vh": "5vh",
+      },
     },
   },
   plugins: [],
