@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const MENU_ITEM = [
   {
@@ -23,15 +24,28 @@ const MENU_ITEM = [
 export const Header = () => {
   return (
     <>
-      <div className="flex p-5 gap-5">
-        {MENU_ITEM.map((menu) => (
-          <>
-            <Link href={menu.link} key={menu.label}>
-              <div className="flex hover:bg-yellow-50">{menu.label}</div>
-            </Link>
-          </>
-        ))}
-      </div>
+      <header className="flex my-5 mr-20 ml-10">
+        <Link href="/" className="flex">
+          <Image
+            src={"/images/profile.png"}
+            alt="profile"
+            width={80}
+            height={60}
+          />
+          <div className="mt-10 ml-3">HYEYEON KIM</div>
+        </Link>
+
+        {/* <div className="flex gap-5 justify-center"> */}
+        <div className="ml-auto mt-5 gap-5 flex items-center justify-center">
+          {MENU_ITEM.map((menu, index) => (
+            <div key={index}>
+              <Link href={menu.link}>
+                <div className="flex hover:bg-yellow-50">{menu.label}</div>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </header>
     </>
   );
 };
