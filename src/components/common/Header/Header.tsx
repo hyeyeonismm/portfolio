@@ -29,8 +29,8 @@ export const Header = () => {
           <Image
             src={"/images/profile.png"}
             alt="profile"
-            width={80}
-            height={60}
+            width={75}
+            height={75}
           />
           <div className="mt-10 ml-3">HYEYEON KIM</div>
         </Link>

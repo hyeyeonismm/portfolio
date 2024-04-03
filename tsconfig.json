@@ -19,7 +19,8 @@
     ],
     "paths": {
       "@components/*": ["./src/components/*"],
-      "@images/*": ["./public/images/*"]
+      "@images/*": ["./public/images/*"],
+      "@public/*": ["./public/*"]
     }
   },
   "include": [

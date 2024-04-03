@@ -14,6 +14,11 @@ module.exports = {
         // pt: ["PT Serif", "serif"],
         // sans: ["Inter", "sans-serif"],
       },
+      colors: {
+        "marin-blue": "#7962f3",
+        "marin-semiblue": "#8fa4fe",
+        "marin-skyblue": "#deeafe",
+      },
     },
   },
   plugins: [],

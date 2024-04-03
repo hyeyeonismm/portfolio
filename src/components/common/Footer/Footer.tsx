@@ -5,12 +5,12 @@ import Image from "next/image";
 export const Footer = () => {
   return (
     <>
-      <footer className="flex justify-between  px-12 py-5 bg-stone-200">
-        <div className="text-gray-500 text-xs pt-2">
+      <footer className="flex justify-between  px-12 py-8 bg-stone-200">
+        <div className="text-stone-500 text-xs pt-2">
           © 2024 — HYEYEON KIM
           <Link
             href="https://www.instagram.com/hyeyeonismm/"
-            className="text-gray-500 ml-3"
+            className="text-stone-500 ml-3"
           >
             @hyeyeonismm
           </Link>

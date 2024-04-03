@@ -1,12 +1,10 @@
-import { Header } from "@components/common/Header";
-import { Footer } from "@components/common/Footer";
+import React from "react";
+import Main from "@components/Main/Main";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <div>홈화면</div>
-      <Footer />
+      <Main />
     </>
   );
 }
