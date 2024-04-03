@@ -7,12 +7,7 @@ const Lottie = dynamic(() => import("react-lottie-player"), { ssr: false });
 export default function Animation() {
   return (
     <>
-      <Lottie
-        loop
-        animationData={lottieJson}
-        play
-        style={{ width: "40%", height: "40%" }}
-      />
+      <Lottie loop animationData={lottieJson} play style={{ width: "500px" }} />
     </>
   );
 }
