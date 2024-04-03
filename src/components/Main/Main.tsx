@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import { Animation } from "./Animation";
+import Animation from "./Animation";
 
-export default function Main() {
+export const Main = () => {
   return (
     <div className="body">
       <div className="flex flex-row mx-20 my-8 gap-10">
@@ -35,4 +35,4 @@ export default function Main() {
       </div>
     </div>
   );
-}
+};

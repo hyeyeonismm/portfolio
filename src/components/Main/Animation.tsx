@@ -4,7 +4,7 @@ import lottieJson from "@public/animation.json";
 import dynamic from "next/dynamic";
 
 const Lottie = dynamic(() => import("react-lottie-player"), { ssr: false });
-export const Animation = () => {
+export default function Animation() {
   return (
     <>
       <Lottie
@@ -15,4 +15,4 @@ export const Animation = () => {
       />
     </>
   );
-};
+}
