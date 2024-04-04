@@ -4,11 +4,11 @@ import Animation from "./Animation";
 
 export const Main = () => {
   return (
-    <div className="container flex md:flex-row flex-col justify-center items-center mx-auto py-5vh">
-      <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+    <div className="flex md:flex-row flex-col justify-center items-center md:px-0 px-10">
+      <div className="lg:max-w-lg w-3/4 lg:w-full min-w-16">
         <Animation />
       </div>
-      <div>
+      <div className=" md:my-0 my-10">
         <div className="text-marin-blue text-lg font-bold">
           #꾸준함 #능동적 #커뮤니케이션
         </div>

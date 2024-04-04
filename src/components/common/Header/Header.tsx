@@ -24,23 +24,24 @@ const MENU_ITEM = [
 export const Header = () => {
   return (
     <>
-      <header className="flex my-5 mr-20 ml-10">
-        <Link href="/" className="flex">
+      <header className="flex flex-col md:flex-row m-5 justify-between">
+        <Link href="/" className="flex justify-center items-center">
           <Image
             src={"/images/profile.png"}
             alt="profile"
             width={75}
             height={75}
           />
-          <div className="mt-10 ml-3">HYEYEON KIM</div>
+          <div className="font-bold">HYEYEON KIM</div>
         </Link>
 
-        {/* <div className="flex gap-5 justify-center"> */}
-        <div className="ml-auto mt-5 gap-5 flex items-center justify-center">
+        <div className="gap-2 md:gap-5 flex items-center justify-center font-semibold">
           {MENU_ITEM.map((menu, index) => (
             <div key={index}>
               <Link href={menu.link}>
-                <div className="flex hover:bg-yellow-50">{menu.label}</div>
+                <div className="flex p-2 rounded-lg hover:bg-marin-skyblue">
+                  {menu.label}
+                </div>
               </Link>
             </div>
           ))}

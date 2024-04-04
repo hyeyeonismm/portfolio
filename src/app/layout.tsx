@@ -21,9 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="next">
+      <body className="flex flex-col w-full max-w-screen-2xl mx-auto min-h-screen min-w-14">
         <Header />
-        <div className="content">{children}</div>
+        <div className="flex-grow flex flex-col items-center justify-center">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
