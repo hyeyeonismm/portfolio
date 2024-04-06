@@ -18,6 +18,7 @@ module.exports = {
         "marin-blue": "#7962f3",
         "marin-semiblue": "#8fa4fe",
         "marin-skyblue": "#deeafe",
+        "marin-txt": "#01102A",
       },
       padding: {
         "10vh": "10vh",

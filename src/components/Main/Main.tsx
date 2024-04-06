@@ -4,7 +4,7 @@ import Animation from "./Animation";
 
 export const Main = () => {
   return (
-    <div className="flex md:flex-row flex-col justify-center items-center md:px-0 px-10">
+    <div className="flex md:flex-row flex-col justify-center items-center md:px-0 px-10 md:gap-10">
       <div className="lg:max-w-lg w-3/4 lg:w-full min-w-16">
         <Animation />
       </div>

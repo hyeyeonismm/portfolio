@@ -27,7 +27,7 @@ export const Header = () => {
       <header className="flex flex-col md:flex-row m-5 justify-between">
         <Link href="/" className="flex justify-center items-center">
           <Image
-            src={"/images/profile.png"}
+            src={"/images/header_profile.png"}
             alt="profile"
             width={75}
             height={75}
@@ -39,7 +39,7 @@ export const Header = () => {
           {MENU_ITEM.map((menu, index) => (
             <div key={index}>
               <Link href={menu.link}>
-                <div className="flex p-2 rounded-lg hover:bg-marin-skyblue">
+                <div className="flex p-2 rounded-lg hover:bg-marin-skyblue text-marin-txt">
                   {menu.label}
                 </div>
               </Link>

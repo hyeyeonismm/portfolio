@@ -6,3 +6,17 @@
   margin: 0px 20px;
   height: 100%;
 }
+
+.profile_title {
+  background-color: #f2f7ff;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 5px 10px;
+  color: #032054;
+}
+
+.profile_content {
+  padding: 15px 5px;
+  font-size: 14px;
+}

@@ -5,17 +5,18 @@ import Image from "next/image";
 export const Footer = () => {
   return (
     <>
-      <footer className="flex justify-between  px-12 py-8 bg-stone-200">
+      <footer className="flex justify-between px-10 md:px-20 py-8 bg-stone-200">
         <div className="text-stone-500 text-xs pt-2">
           © 2024 — HYEYEON KIM
+          <br />
           <Link
             href="https://www.instagram.com/hyeyeonismm/"
-            className="text-stone-500 ml-3"
+            className="text-stone-500"
           >
             @hyeyeonismm
           </Link>
         </div>
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-row gap-4 md:gap-6">
           <Link href="">
             <Image
               src={"/images/website.png"}
