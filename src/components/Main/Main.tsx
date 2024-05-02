@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Animation from "./animation";
+import Animation from "./Animation";
 
 export const Main = () => {
   return (
