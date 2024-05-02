@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Header } from "@components/common/Header";
 import { Footer } from "@components/common/Footer";
 import "../styles/globals.css";
+import { ThemeProvider } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,11 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col w-full max-w-screen-2xl mx-auto min-h-screen min-w-14">
-        <Header />
-        <div className="flex-grow flex flex-col items-center justify-center">
-          {children}
-        </div>
-        <Footer />
+        <ThemeProvider attribute="class">
+          <Header />
+          <div className="flex-grow flex flex-col items-center justify-center">
+            {children}
+          </div>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

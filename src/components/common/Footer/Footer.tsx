@@ -5,7 +5,7 @@ import Image from "next/image";
 export const Footer = () => {
   return (
     <>
-      <footer className="flex justify-between px-10 md:px-20 py-8 bg-stone-200">
+      <footer className="flex justify-between px-10 md:px-20 py-8 bg-stone-200 dark:bg-slate-600">
         <div className="text-stone-500 text-xs pt-2">
           © 2024 — HYEYEON KIM
           <br />
