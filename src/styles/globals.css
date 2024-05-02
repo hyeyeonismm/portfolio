@@ -20,3 +20,7 @@
   padding: 15px 5px;
   font-size: 14px;
 }
+
+.bg-primary {
+  @apply bg-white dark:bg-slate-800;
+}

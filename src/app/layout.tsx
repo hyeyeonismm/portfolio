@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col w-full max-w-screen-2xl mx-auto min-h-screen min-w-14">
+      <body className="bg-primary flex flex-col w-full max-w-screen-2xl mx-auto min-h-screen min-w-14">
         <ThemeProvider attribute="class">
           <Header />
           <div className="flex-grow flex flex-col items-center justify-center">
