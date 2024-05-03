@@ -13,6 +13,14 @@ const fetchData = async () => {
         "Notion-Version": "2022-06-28",
         Authorization: `Bearer ${TOKEN}`,
       },
+      body: JSON.stringify({
+        sorts: [
+          {
+            property: "id", // Replace with the actual property name in your Notion database if different
+            direction: "descending", // Change to 'descending' if you want to reverse the order
+          },
+        ],
+      }),
     }
   );
   const data = await res.json();
@@ -27,6 +35,7 @@ const fetchData = async () => {
 
 const Project = async () => {
   const data = await fetchData();
+
   console.log(data);
 
   return (

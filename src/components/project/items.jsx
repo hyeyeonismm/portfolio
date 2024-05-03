@@ -1,9 +1,11 @@
 import Image from "next/image";
+import ItemImage from "@public/images/profile.jpg";
 
 export default function ProjectItem({ data }) {
   const title = data.properties["이름"].title
     .map((textItem) => textItem.plain_text)
     .join("");
+  const coverImg = data.cover.file.url;
   const github = data.properties["깃허브 링크"].url || "깃허브 링크 없음";
   const projectUrl = data.properties["작동 영상"].url || "배포 링크 없음";
   const description =
@@ -20,11 +22,14 @@ export default function ProjectItem({ data }) {
     <div className="project-grid p-6">
       <div className="flex border-2 rounded-lg">
         <div className="flex flex-col p-4 md:w-full sm:mb-0">
-          <div className="rounded-lg h-52 overflow-hidden">
+          <div className="rounded-lg h-52 overflow-hidden mb-5">
             <Image
               className="object-cover object-center h-full w-full"
-              src=""
+              src={coverImg ? coverImg : ItemImage}
               alt="cover"
+              width={1000}
+              height={1000}
+              quality={80}
             />
           </div>
           <div className="flex flex-col gap-2">
