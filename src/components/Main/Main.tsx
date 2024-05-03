@@ -4,7 +4,7 @@ import Animation from "./Animation";
 
 export const Main = () => {
   return (
-    <div className="flex md:flex-row flex-col justify-center items-center md:px-0 px-10 md:gap-10">
+    <div className="flex md:flex-row flex-col justify-center items-center px-10 md:gap-10">
       <div className="lg:max-w-lg w-3/4 lg:w-full min-w-16">
         <Animation />
       </div>
@@ -14,10 +14,10 @@ export const Main = () => {
         </div>
 
         <div className="pt-4 text-lg leading-8">
-          어제보다 나은 내일을 위해 노력하는{" "}
+          어제보다 나은 내일을 위해 노력하는 <br />
           <span className="font-bold text-xl">개발자 김혜연</span>입니다.
           <br />
-          로직을 설계하고 플랫폼을 개발하며{" "}
+          로직을 설계하고 플랫폼을 개발하며 <br />
           <span className="text-marin-semiblue font-semibold">
             기술적인 솔루션
           </span>
