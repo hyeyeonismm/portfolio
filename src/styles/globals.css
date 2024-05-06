@@ -2,35 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-.body {
-  margin: 0px 20px;
-  height: 100%;
-}
-
-.profile_title {
-  background-color: #f2f7ff;
-  font-weight: 700;
-  font-size: 16px;
-  border-radius: 8px;
-  padding: 5px 10px;
-  color: #032054;
-}
-
-.profile_content {
-  padding: 15px 5px;
-  font-size: 14px;
-}
-
 .bg-primary {
   @apply bg-white dark:bg-slate-800;
 }
 .project-grid {
-  @apply flex flex-col w-full
+  @apply flex flex-col
           transition duration-300 transform 
           hover:scale-105
           hover:shadow-lg
           hover:rounded-xl
           dark:border-gray-200/50
-          dark:hover:shadow-gray-400/10
-          cursor-pointer;
+          dark:hover:shadow-gray-400/10;
+}
+.layout {
+  @apply flex flex-col w-full max-w-full mx-auto min-h-screen min-w-14;
+}
+
+.body-class {
+  @apply flex-grow flex flex-col items-center justify-center;
+}
+
+.a-class {
+  @apply text-indigo-500 items-center hover:underline underline-offset-1;
 }

@@ -1,1 +1,1 @@
-export { DarkModeBtn } from "./DarkModeBtn";
+export { ThemeBtn } from "./ThemeBtn";

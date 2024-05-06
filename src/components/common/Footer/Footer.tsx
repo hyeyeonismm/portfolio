@@ -5,19 +5,16 @@ import Image from "next/image";
 export const Footer = () => {
   return (
     <>
-      <footer className="flex justify-between px-10 md:px-20 py-8 bg-stone-200 dark:bg-slate-600">
-        <div className="text-stone-500 text-xs pt-2">
+      <footer className="flex justify-between w-full px-10 md:px-20 py-8 text-stone-500 dark:text-stone-300 bg-stone-200 dark:bg-slate-600">
+        <div className="text-xs">
           © 2024 — HYEYEON KIM
           <br />
-          <Link
-            href="https://www.instagram.com/hyeyeonismm/"
-            className="text-stone-500"
-          >
+          <Link href="https://www.instagram.com/hyeyeonismm/">
             @hyeyeonismm
           </Link>
         </div>
         <div className="flex flex-row gap-4 md:gap-6">
-          <Link href="">
+          <Link target="_blank" href="">
             <Image
               src={"/images/website.png"}
               alt="website"
@@ -25,7 +22,7 @@ export const Footer = () => {
               height={30}
             />
           </Link>
-          <Link href="mailto:hyeyeonismm@gmail.com">
+          <Link target="_blank" href="mailto:hyeyeonismm@gmail.com">
             <Image
               src={"/images/email.png"}
               alt="website"
@@ -33,7 +30,7 @@ export const Footer = () => {
               height={30}
             />
           </Link>
-          <Link href="https://github.com/hyeyeonismm">
+          <Link target="_blank" href="https://github.com/hyeyeonismm">
             <Image
               src={"/images/github.svg"}
               alt="website"

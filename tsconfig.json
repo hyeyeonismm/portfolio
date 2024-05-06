@@ -31,8 +31,8 @@
     ".next/types/**/*.ts",
     "tailwind.config.js",
     "src/components/project/project-item.js",
-    "src/app/project/page.jsx",
-    "src/components/project/items.jsx"
+    "src/app/project/page.tsx",
+    "src/components/project/items.tsx"
   ],
   "exclude": ["node_modules"]
 }

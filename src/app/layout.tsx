@@ -21,13 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="bg-primary flex flex-col w-full max-w-screen-2xl mx-auto min-h-screen min-w-14">
+    <html lang="en" suppressHydrationWarning>
+      <body className="bg-primary layout">
         <ThemeProvider attribute="class">
           <Header />
-          <div className="flex-grow flex flex-col items-center justify-center">
-            {children}
-          </div>
+          <div className="body-class">{children}</div>
           <Footer />
         </ThemeProvider>
       </body>
