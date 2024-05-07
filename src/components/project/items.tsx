@@ -4,10 +4,14 @@ import { Properties } from "../../app/project/page";
 interface ProjectItemProps {
   properties: Properties;
   image: StaticImageData;
-  url: string;
+  public_url: string;
 }
 
-export const ProjectItem = ({ properties, image, url }: ProjectItemProps) => {
+export const ProjectItem = ({
+  properties,
+  image,
+  public_url,
+}: ProjectItemProps) => {
   const titles = properties.이름.title
     .map((title) => title.plain_text)
     .join("");
@@ -31,7 +35,7 @@ export const ProjectItem = ({ properties, image, url }: ProjectItemProps) => {
       <div className="flex flex-col gap-2">
         <a
           target="_blank"
-          href={url}
+          href={public_url}
           className="text-xl font-bold dark:text-white text-gray-900 cursor-pointer hover:underline underline-offset-1"
         >
           {titles}

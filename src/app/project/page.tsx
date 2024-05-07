@@ -15,7 +15,7 @@ export interface Properties {
 interface Results {
   id: string;
   properties: Properties;
-  url: string;
+  public_url: string;
 }
 
 interface NotionAPI {
@@ -44,7 +44,7 @@ const fetchData = async () => {
 
 const Project = async () => {
   const response = await fetchData();
-
+  console.log(response);
   const images = [linkstock, loveoffishbread, portfolio];
 
   return (
@@ -56,7 +56,7 @@ const Project = async () => {
               <ProjectItem
                 properties={res.properties}
                 image={images[index % images.length]}
-                url={res.url}
+                public_url={res.public_url}
               />
             }
           </div>
